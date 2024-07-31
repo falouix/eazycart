@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyCart - Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">EasyCart</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <button id="show-login" class="btn btn-primary">Login</button>
+                <button id="show-inscrit" class="btn btn-secondary">Inscrit</button>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div id="action-holder">
+                    <div id="login-component" class="component card" style="display: none;">
+                        <div class="login-form">
+                            <h2 class="title-card">Login</h2>
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="login-email" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="login-password" placeholder="Enter password">
+                                </div>
+                                
+                                <div class="form-group"style="text-align: center;">
+                                   <a href="#" >forget password?</a>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary login-btn">Login</button>
+                                <div class="form-group"style="text-align: center;">
+                                    <span>Don't you have an accoubnt?<a href="#" >Signup</a></span>
+                                 </div>
+                            </form>
+                            <hr/>
+                            <button type="submit" class="btn btn-primary login-btn">Login with Facebook</button>
+                            <button type="submit" class="btn btn-primary login-btn2">Login with Google</button>
+                        </div>
+                    </div>
+                    <div id="inscrit-component" class="component card" style="display: none;">
+                        <div class="inscrit-form">
+                            <h2 class="title-card">Inscrit</h2>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="inscrit-name" placeholder="Enter name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="inscrit-email" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="inscrit-password" placeholder="Enter password">
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Inscrit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 pt-5">
+
+        <div class="row mt-5" id="product-list">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$10.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="1" data-name="Product 1" data-price="10.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/product2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary add-to-cart" data-id="2" data-name="Product 2" data-price="20.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
